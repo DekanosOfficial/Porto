@@ -1,0 +1,16 @@
+Frontend:
+- HTML
+- CSS
+- JavaScript
+
+Backend:
+- Node.js
+- Express.js
+- mssql (SQL Server driver)
+
+Database:
+- SQL Server
+- SSMS for GUI
+
+Extras (Installed via npm):
+- body-parser
