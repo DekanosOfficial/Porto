@@ -1,16 +1,10 @@
-Frontend:
-- HTML
-- CSS
-- JavaScript
-
-Backend:
-- Node.js
-- Express.js
-- mssql (SQL Server driver)
-
-Database:
-- SQL Server
-- SSMS for GUI
-
-Extras (Installed via npm):
-- body-parser
+Part	Tool
+Frontend	HTML/CSS/JS (or React)
+Backend	Node.js + Express
+Database	SQLite (local) → PostgreSQL (cloud)
+Auth	JWT (with bcrypt for password hashing)
+File Uploads	multer (store locally or use Cloudinary later)
+ORM	Prisma (with SQLite/PostgreSQL)
+Hosting (dev)	Render or Railway for backend, Vercel for frontend
+Version Control	GitHub
+CI/CD (later)	GitHub Actions or Render deploy hooks
