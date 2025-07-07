@@ -7,8 +7,8 @@ app.use(express.static('public'));
 app.use(express.json());
 
 // register
-app.post('./register', async (req, res) => {
-    const { fisrtName, lastName, email, password } = req.body;
+app.post('/register', async (req, res) => {
+    const { firstName, lastName, email, password } = req.body;
 
     try {
         await poolConnect;
@@ -17,7 +17,7 @@ app.post('./register', async (req, res) => {
             .input('email', sql.NVarChar, email)
             .query('SELECT * FROM Users WHERE email = @email');
 
-        if (result.recordst.length > 0) {
+        if (result.recordset.length > 0) {
             return res.status(400).send('Email already registered');
         }
 
@@ -52,7 +52,7 @@ app.post('/login', async (req, res) => {
         }
 
         const user = result.recordset[0];
-        res.send(`Welcome back, {user.firstName || 'Users'}!`);
+        res.send(`Welcome back, ${user.firstName || 'Users'}!`);
     } catch (err) {
         console.error(err)
         res.status(500).send('Server error');

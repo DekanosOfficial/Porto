@@ -1,10 +1,11 @@
 const sql = require('mssql');
 
 const config = {
-    user: 'YOUR_SQL_USER',
-    password: 'YOUR_PASSWORD',
-    server: 'YOUR_SERVER_NAME', // e.g. localhost or YOUR_PC\SQLEXPRESS
-    database: 'YOUR_DATABASE_NAME',
+    user: 'sa',
+    password: 'ForTheLoveOfTheGame',
+    server: '127.0.0.1', // e.g. localhost or YOUR_PC\SQLEXPRESS
+    port: 1433,
+    database: 'UserAuthdb',
     options: {
     encrypt: false, // Use true for Azure
     trustServerCertificate: true
@@ -12,6 +13,6 @@ const config = {
 };
 
 const pool = new sql.ConnectionPool(config);
-const poolConnect = pool.conect();
+const poolConnect = pool.connect();
 
 module.exports = { sql, pool, poolConnect };
