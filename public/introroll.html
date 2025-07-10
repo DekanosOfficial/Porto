@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Porto</title>
+  <link rel="stylesheet" href="dash.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Intro Slide -->
+    <div class="introSlide-about">
+      <div class="input-box">
+        <p><b>Porto.</b> is your creative launchpad — a portfolio and social platform built for students and creators. Whether you're a programmer, artist, engineer, writer, designer, or just starting out, Porto helps you showcase your work, connect with mentors and friends, and find your path.</p>
+        
+        <h2>What you can do here:</h2>
+        <ul>
+          <li><b>Create your portfolio:</b> Share your best work.</li>
+          <li><b>Collaborate and learn:</b> Work with others and grow your skills.</li>
+          <li><b>Grow your network:</b> Meet mentors, friends, and collaborators.</li>
+          <li><b>Boost your visibility:</b> Let hiring managers and recruiters find you.</li>
+        </ul>
+
+        <h2>Rules & Guidelines:</h2>
+        <ul>
+          <li><b>Be respectful:</b> Treat others with kindness.</li>
+          <li><b>Stay original:</b> Only share content you own or created.</li>
+          <li><b>Keep it constructive:</b> Give helpful feedback.</li>
+          <li><b>Stay safe:</b> Don’t share personal/sensitive info.</li>
+        </ul>
+
+        <p>Whether you're here to get inspired, learn, or just get started — welcome to <b>Porto.</b> Your journey begins now.</p>
+      </div>
+      <button class="btn btnnext" type="button">Next</button>
+    </div>
+
+    <!-- Setup Prompt -->
+    <form id="setuppromptForm">
+      <div class="input-box">
+        <div class="setup-prompt">
+          <p>Do you want to set up your account now or later?</p>
+          <button class="btn btnlater" type="button">Later</button>
+          <button class="btn btnNow" type="button">Now</button>
+          <button class="btn btnback" type="button">Back</button>
+        </div>
+      </div>
+    </form>
+
+    <!-- Role Form -->
+    <form id="roleForm">
+      <h1>Account Type</h1>
+      <div class="input-box">
+        <p>Why do you want to use Porto?</p>
+        <p>Are you a:</p>
+        <div class="role-Selector">
+          <label><input type="checkbox" class="role role-student" /> Student</label>
+          <label><input type="checkbox" class="role role-mentor" /> Mentor</label>
+          <label><input type="checkbox" class="role role-creator" /> Creator</label>
+          <label><input type="checkbox" class="role role-agent" /> Agent</label>
+        </div>
+        <button class="btn btnback" type="button">Back</button>
+        <button class="btn btnnext" type="button">Next</button>
+      </div>
+    </form>
+
+    <!-- Interests -->
+    <div class="slide-box interest">
+      <form id="interestsForm">
+        <h2>What are you interested in?</h2>
+        <div class="input-box">
+          <p>Choose one or more:</p>
+          <div class="interest-selector">
+            <label><input type="checkbox" class="chkbox" /> Art & Design</label>
+            <label><input type="checkbox" class="chkbox" /> Programming</label>
+            <label><input type="checkbox" class="chkbox" /> Game Development</label>
+            <label><input type="checkbox" class="chkbox" /> Writing</label>
+            <label><input type="checkbox" class="chkbox" /> Engineering</label>
+            <label><input type="checkbox" class="chkbox" /> Other</label>
+          </div>
+          <button class="btn btnback" type="button">Back</button>
+          <button class="btn btnnext" type="submit">Next</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

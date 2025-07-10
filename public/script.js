@@ -12,7 +12,7 @@ loginBtn.addEventListener('click', ()=> {
 });
 
 // register form submission
-document.getElementById('registerForm').addEventListener('submit', async (e) => {
+document.getElementById('register-Form').addEventListener('submit', async (e) => {
     e.preventDefault();
 
     const formData = new FormData(e.target);
@@ -28,7 +28,7 @@ document.getElementById('registerForm').addEventListener('submit', async (e) => 
 });
 
 // login form submission
-document.getElementById('loginForm').addEventListener('submit', async (e) => {
+document.getElementById('login-Form').addEventListener('submit', async (e) => {
     e.preventDefault();
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData.entries());
